@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+@mixin flex-row {
+    display: flex;
+}
+
 @mixin flex-center-center {
     justify-content: center;
     align-items: center;

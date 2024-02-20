@@ -3,7 +3,7 @@
     position: relative;
     padding: 1rem;
     &__top-section {
-        display: flex;
+        @include flex-row;
         @include flex-between-center;
     }
     &__middle-section {
