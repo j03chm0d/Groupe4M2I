@@ -1,0 +1,26 @@
+.card {
+    background-color: $cardBackGround-color;
+    position: relative;
+    padding: 1rem;
+    &__top-section {
+        display: flex;
+        @include flex-between-center;
+    }
+    &__middle-section {
+        @include flex-column;
+        @include flex-end-center;
+    }
+    &__bottom-section {
+        
+    }
+
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;    
+    }
+
+}
