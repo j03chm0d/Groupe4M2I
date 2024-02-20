@@ -1,7 +1,31 @@
+.btn {
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-big {
+  padding: 0.5rem 0.5rem;
+}
+
+.btn-small {
+  padding: 0.3rem 0.4rem;
+  background-color: #1447f5;
+}
+
 .card {
+  width: 30rem;
+  height: 50rem;
   background-color: #1d1e23;
   position: relative;
   padding: 1rem;
+}
+.card .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
 }
 .card__top-section {
   display: flex;
@@ -14,13 +38,40 @@
   justify-content: flex-end;
   align-items: center;
 }
-.card .container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+.card__middle-section img-container {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card__middle-section__start-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__middle-section__start-container .fa-solid.fa-star {
+  margin-right: 0.5rem;
+}
+.card__bottom-section {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card__bottom-section__qualities-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card__bottom-section__description {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.card__bottom-section__viewProfil-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 html {

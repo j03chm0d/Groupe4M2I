@@ -1,19 +1,9 @@
 .card {
+    width: 30rem;
+    height: 50rem;
     background-color: $cardBackGround-color;
     position: relative;
     padding: 1rem;
-    &__top-section {
-        @include flex-row;
-        @include flex-between-center;
-    }
-    &__middle-section {
-        @include flex-column;
-        @include flex-end-center;
-    }
-    &__bottom-section {
-        
-    }
-
     .container {
         position: absolute;
         top: 0;
@@ -21,5 +11,45 @@
         right: 0;
         @include flex-column;   
     }
+    &__top-section {
+        @include flex-row;
+        @include flex-between-center;
+    }
+    &__middle-section {
+        @include flex-column;
+        @include flex-end-center;
+        img-container {
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        &__start-container {
+            @include flex-row;
+            @include flex-between-center;
+            .fa-solid.fa-star {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    &__bottom-section {
+        @include flex-column;   
+        @include flex-end-center;
+        &__qualities-container {
+            @include flex-row;
+            @include flex-between-center;
+            margin-bottom: 1rem;
+        }
+        &__description {
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+        &__viewProfil-container {
+            @include flex-row;
+            @include flex-between-center;
+        }
+    }
+
+   
 
 }
